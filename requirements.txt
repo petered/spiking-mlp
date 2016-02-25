@@ -1,0 +1,9 @@
+numpy
+Theano
+matplotlib
+scikit-learn
+pytest
+IPython
+-e git+http://github.com/petered/plato#egg=plato
+-e git+http://github.com/petered/deepstream@make-nice-package#egg=deepstream
+git+http://github.com/originell/jpype#egg=jpype
