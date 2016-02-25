@@ -4,6 +4,6 @@ matplotlib
 scikit-learn
 pytest
 IPython
--e git+http://github.com/petered/plato@v0.0.3#egg=plato
+-e git+http://github.com/petered/plato@0.0.3#egg=plato
 -e git+http://github.com/petered/deepstream@v0.0.0#egg=deepstream
 git+http://github.com/originell/jpype#egg=jpype
