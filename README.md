@@ -2,7 +2,7 @@
 
 The code in this repo allows you to recreate our experiments in the soon-to-be-available paper "Deep Spiking Networks".
 
-The Spiking MLP is written in Java (for speed), but we call it from Python (for convenience), using JPype (as a bridge).
+The Spiking MLP is written in Java (for speed), but we call it from Python (for convenience), using JPype (as a bridge  This repo depends on [Plato](/petered/plato), which is a library ob useful ML/Deep Learning stuff, mainly built on top of Theano, and [DeepStream](/petered/deepstream) which is our fancy new Spiking Deep Network repo.  
 
 ## Setup
 
