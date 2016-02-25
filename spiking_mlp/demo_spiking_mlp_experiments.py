@@ -138,14 +138,14 @@ def compare_spiking_to_nonspiking(hidden_sizes = [300, 300], eta=0.01, w_init=0.
 
     plt.figure('ReLU vs Spikes')
     plt.subplot(211)
-    plot_learning_curves(results, title = "MNIST Learning Curves", hang=False, figure_name='ReLU vs Spikes', xscale='linear', y_title='Percent Error')
+    plot_learning_curves(results, title = "MNIST Learning Curves", hang=False, figure_name='ReLU vs Spikes', xscale='linear', yscale='log', y_title='Percent Error')
     plt.subplot(212)
     plt.plot(test_epochs[1:], forward_rates)
     plt.plot(test_epochs[1:], backward_rates)
     plt.xlabel('Epoch')
     plt.ylabel('n_spikes')
     plt.legend(['Mean Forward Spikes', 'Mean Backward Spikes'], loc='best')
-    plt.ioff()
+    plt.interactive(is_test_mode())
     plt.show()
     # plt.ioff()
 
@@ -235,6 +235,5 @@ ExperimentLibrary.try_hyperparams = Experiment(
 
 if __name__ == '__main__':
 
-    set_test_mode(True)
     experiment = ExperimentLibrary.try_hyperparams
     experiment.run()

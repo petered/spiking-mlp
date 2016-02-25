@@ -72,8 +72,6 @@ Error when calling the Java Code.  Did you:
             print "HEY YOU!  Did you remember to declare your constructor public?"
         # jp.shutdownJVM()  # Apperently, this doesn't need to be called.
         # And it prevents us from starting it again...
-        # global JPYPE_SINGLETON
-        # JPYPE_SINGLETON = None  # Ahemehem
         os.chdir(self._old_cd)
 
 
