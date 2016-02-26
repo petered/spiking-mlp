@@ -25,11 +25,8 @@ You'll notice a little `(venv)` on the left of your terminal prompt.  This means
 There are a few ways to do this, here I list the one that I'm most familiar with, though there may be easier ways.
 
 - Download [IntelliJ IDEA](https://www.jetbrains.com/idea/) (IntelliJ is a Java IDE, like Eclipse or Netbeans).  
-- `File > New > Project From Existing Sources...`
-- Navigate to `<your projects folder>/spiking-mlp/venv/src/deepspike` and click OK
-- Select "Import project from external model", then select Maven.  Next.  Next.  Next.
-- On the "Please Select Project SDK" screen, select Java 1.8.  If it's not there, you'll have to download Java 1.8.  Next.  Finish.
-- Good, you've set up the project.  Now from the top toolbar, select `Build > Make Project`.  It should compile without error, and you should notice a new folder called "target" in your project root.  Good, you're done with this part.
+- `File > Open...`, then navigate to `<your projects folder>/spiking-mlp/venv/src/deepspike/pom.xml` and click "Choose".  This will open the DeepSpike project.
+- From the top toolbar, select `Build > Make Project`.  It should compile without error, and you should notice a new folder called "target" in your project root.  Good, you're done with this part.
 
 ### Step 3: Run Experiments
 
