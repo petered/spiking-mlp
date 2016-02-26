@@ -5,5 +5,5 @@ scikit-learn
 pytest
 IPython
 -e git+http://github.com/petered/plato@0.0.3#egg=plato
--e git+http://github.com/petered/deepstream@v0.0.0#egg=deepstream
-git+http://github.com/originell/jpype#egg=jpype
+-e git+http://github.com/petered/deepspike@v0.0.0#egg=deepspike
+git+http://github.com/originell/jpype@v0.6.1#egg=jpype

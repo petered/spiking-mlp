@@ -1,5 +1,5 @@
 from jpype_connect import jpype_compile, register_java_class_path, find_jars
-from deepstream_directory import locate_class_dir
+from deepspike_directory import locate_class_dir
 from general.numpy_helpers import get_rng
 import numpy as np
 from utils.predictors.i_predictor import IPredictor
@@ -7,12 +7,7 @@ import jpype as jp
 
 __author__ = 'peter'
 
-
-# print locate_class_dir()
-
 register_java_class_path(locate_class_dir())
-# register_java_class_path('/Users/peter/projects/argmaxlab/argmaxlab/spiking_experiments')
-# register_java_class_path(list(find_jars('/Users/peter/.m2/')))
 
 
 class JavaSpikingNetWrapper(IPredictor):
@@ -24,7 +19,7 @@ class JavaSpikingNetWrapper(IPredictor):
 
         self.dtype = dtype;
         self.jnet = \
-                jp.JClass('nl.uva.deepstream.mlp.SpikingMLP')(ws, n_steps, eta, depth_first, fractional, queue_implementation, return_counts,
+                jp.JClass('nl.uva.deepspike.mlp.SpikingMLP')(ws, n_steps, eta, depth_first, fractional, queue_implementation, return_counts,
                     smooth_grads, forward_discretize, back_discretize, test_discretize, seed, regularization, hold_error, dtype.upper(),
                     )
 
