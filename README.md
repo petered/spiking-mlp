@@ -2,7 +2,7 @@
 
 The code in this repo allows you to recreate our experiments in the soon-to-be-available paper "Deep Spiking Networks".
 
-The Spiking MLP is written in Java (for speed), but we call it from Python (for convenience), using JPype (as a bridge  This repo depends on [Plato](https://github.com/petered/plato), which is a library ob useful ML/Deep Learning stuff, mainly built on top of Theano, and [DeepStream](https://github.com/petered/DeepStream) which is our fancy new Spiking Deep Network repo.  
+The Spiking MLP is written in Java (for speed), but we call it from Python (for convenience), using JPype (as a bridge  This repo depends on [Plato](https://github.com/petered/plato), which is a library ob useful ML/Deep Learning stuff, mainly built on top of Theano, and [DeepSpike](https://github.com/petered/DeepSpike) which is our fancy new Spiking Deep Network repo.  
 
 ## Setup
 
@@ -26,7 +26,7 @@ There are a few ways to do this, here I list the one that I'm most familiar with
 
 - Download [IntelliJ IDEA](https://www.jetbrains.com/idea/) (IntelliJ is a Java IDE, like Eclipse or Netbeans).  
 - `File > New > Project From Existing Sources...`
-- Navigate to `<your projects folder>/spiking-mlp/venv/src/deepstream` and click OK
+- Navigate to `<your projects folder>/spiking-mlp/venv/src/deepspike` and click OK
 - Select "Import project from external model", then select Maven.  Next.  Next.  Next.
 - On the "Please Select Project SDK" screen, select Java 1.8.  If it's not there, you'll have to download Java 1.8.  Next.  Finish.
 - Good, you've set up the project.  Now from the top toolbar, select `Build > Make Project`.  It should compile without error, and you should notice a new folder called "target" in your project root.  Good, you're done with this part.
