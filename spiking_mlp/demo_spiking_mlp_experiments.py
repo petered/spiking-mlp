@@ -60,8 +60,8 @@ def compare_spiking_to_nonspiking(hidden_sizes = [300, 300], eta=0.01, w_init=0.
         ).compile()
 
     # Listen for spikes
-    forward_eavesdropper = jp.JClass('nl.uva.deepstream.eavesdroppers.SpikeCountingEavesdropper')()
-    backward_eavesdropper = jp.JClass('nl.uva.deepstream.eavesdroppers.SpikeCountingEavesdropper')()
+    forward_eavesdropper = jp.JClass('nl.uva.deepspike.eavesdroppers.SpikeCountingEavesdropper')()
+    backward_eavesdropper = jp.JClass('nl.uva.deepspike.eavesdroppers.SpikeCountingEavesdropper')()
     for lay in spiking_net.jnet.layers:
         lay.forward_herder.add_eavesdropper(forward_eavesdropper)
     for lay in spiking_net.jnet.layers[1:]:
