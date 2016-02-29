@@ -1,6 +1,6 @@
 # A Spiking Multi Layer Perceptron
 
-The code in this repo allows you to recreate our experiments in the soon-to-be-available paper [Deep Spiking Networks](http://arxiv.org/pdf/1602.08323v1.pdf).
+The code in this repo allows you to recreate our experiments in our new paper [Deep Spiking Networks](http://arxiv.org/pdf/1602.08323v1.pdf).
 
 The Spiking MLP is written in Java (for speed), but we call it from Python (for convenience), using JPype (as a bridge).  This repo depends on [Plato](https://github.com/petered/plato), which is a library of useful ML/Deep Learning stuff, mainly built on top of Theano, and [DeepSpike](https://github.com/petered/DeepSpike) which is our fancy new Java Spiking Deep Network repo.  
 
