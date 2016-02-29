@@ -41,4 +41,4 @@ If the tests pass, you're good to go.  To run the experiments, you can tinker wi
 
 - Can't locate Java?  For now we have a hardcoded path to Java.  If you're not on mac, you'll have to edit the file `spiking_mlp.jpype_connect.py`, function `_guess_java_loc` to include the new path.  
 
-Please email me at peter <dot> ed <dot> oconnor at google's email service if you have any questions/comments/bug-reports.
+Please email me at peter \<dot\> ed \<dot\> oconnor at google's email service if you have any questions/comments/bug-reports.
