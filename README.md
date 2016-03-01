@@ -37,7 +37,7 @@ First verify that the experiments are working.  In terminal, from the `spiking-m
 ```
 py.test
 ```
-If the tests pass, you're good to go.  To run the experiments, you can tinker with the paremeters at the bottom of `demo_spiking_mlp_experiments.py`, and run the experiments.
+If the tests pass, you're good to go.  If they fail, consult troubleshooting below, and failing that email me the problem (or better yet the solution - email's at the bottom)  To run the experiments, you can tinker with the paremeters at the bottom of `demo_spiking_mlp_experiments.py`, and run the experiments.
 
 ### Troubleshooting
 
