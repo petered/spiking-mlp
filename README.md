@@ -41,6 +41,6 @@ If the tests pass, you're good to go.  To run the experiments, you can tinker wi
 
 ### Troubleshooting
 
-- Can't locate Java?  For now we have a hardcoded path to Java.  If you're not on mac, you'll have to edit the file `spiking_mlp.jpype_connect.py`, function `_guess_java_loc` to include the new path.  
+- Can't locate Java?  For now we've hardcoded the path to Java, so it'll only work if you're on Mac and have Java installed in the normal place and have the same Java version as we used.    So if you get `AssertionError: "Hmmm.  It's not here.  Install Java or update this function to be more clever at finding it."`, you have to edit the file `spiking_mlp.jpype_connect.py`, function `_guess_java_loc` to include the new path.  
 
 Please email me at peter \<dot\> ed \<dot\> oconnor at google's email service if you have any questions/comments/bug-reports.
