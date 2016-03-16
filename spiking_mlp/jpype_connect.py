@@ -111,7 +111,7 @@ def register_java_class_path(class_path):
         assert isinstance(class_path, (list, tuple)), "class_path should either be a string or a list/tuple"
 
     for cp in class_path:
-        assert os.path.exists(cp), "Java Class path: %s does not exist" % (cp, )
+        assert os.path.exists(cp), "Java Class path: %s does not exist.  Did you forget to compile the Java code?" % (cp, )
 
     global _JAVA_CLASS_PATH
     _JAVA_CLASS_PATH += class_path
