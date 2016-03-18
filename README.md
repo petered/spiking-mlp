@@ -1,5 +1,7 @@
 # A Spiking Multi Layer Perceptron
 
+**Note: If you are looking for information on the character "Spike" from My Little Pony, this is not the correct website.  I recommend you go [here](http://mlp.wikia.com/wiki/Spike) instead.**
+
 The code in this repo allows you to recreate our experiments in our new paper [Deep Spiking Networks](http://arxiv.org/pdf/1602.08323v1.pdf).  In this paper, we introduce a new way to implement Deep Feed-Forward networks using spiking neurons - that is, neurons that only communicate by sending an "I fired" signal to their downstream neighbours.  Our architecture requires only addition, indexing, and comparison (no multiplication) operations, and has the interesting property that the amount of computation required per data point is a function of the contents of the data.
 
 ## The Code
