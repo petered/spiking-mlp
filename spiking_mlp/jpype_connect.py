@@ -131,10 +131,14 @@ def _guess_java_loc():
     """
     system = platform.system()
     if system == 'Darwin':
+        # MAC
         # guess = '/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/MacOS/libjli.dylib'
         guess = '/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/MacOS/libjli.dylib'
+    elif system == 'Linux':
+        # This worked on a Ubuntu machine with openjdk installed.
+        guess = jp.getDefaultJVMPath()
     else:
-        raise NotImplementedError('Only know how to do this on mac right now.')
+        raise NotImplementedError('Only know how to do this on mac and ubuntu right now.')
     assert os.path.exists(guess), "Hmmm.  It's not here.  Install Java or update this function to be more clever at finding it."
     return guess
 
